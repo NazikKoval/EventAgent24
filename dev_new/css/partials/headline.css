@@ -1,0 +1,28 @@
+.headline {
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0; }
+  .headline h1, .headline h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 15px; }
+  .headline .hint {
+    font-weight: 600;
+    font-size: 12px;
+    background: #b53a0d;
+    border-radius: 4px;
+    padding: 4px 10px;
+    display: inline-block; }
+
+@media all and (min-width: 767px) {
+  .headline {
+    padding: 50px 0; }
+    .headline h1, .headline h2 {
+      font-size: 60px;
+      line-height: 62px;
+      margin-bottom: 30px; }
+    .headline .hint {
+      font-size: 14px; } }
+
+/*# sourceMappingURL=headline.css.map */

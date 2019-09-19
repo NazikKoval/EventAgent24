@@ -1,0 +1,71 @@
+.imaged {
+  padding: 30px 0;
+  color: #ffffff;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .imaged:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+  .imaged h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 25px; }
+  .imaged > * {
+    position: relative;
+    z-index: 2; }
+  .imaged .gallery {
+    text-align: left; }
+    .imaged .gallery .nbs-flexisel-inner {
+      max-height: none;
+      text-align: center; }
+      .imaged .gallery .nbs-flexisel-inner .nbs-flexisel-nav-left,
+      .imaged .gallery .nbs-flexisel-inner .nbs-flexisel-nav-right {
+        top: 0 !important;
+        position: relative;
+        left: auto !important;
+        right: auto !important;
+        display: inline-block;
+        margin: 45px 5px 0 5px; }
+    .imaged .gallery .testemonials-gallery {
+      text-align: left; }
+      .imaged .gallery .testemonials-gallery .name {
+        position: relative;
+        padding-left: 55px;
+        margin-bottom: 20px;
+        line-height: 40px;
+        font-size: 20px; }
+        .imaged .gallery .testemonials-gallery .name img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .imaged .gallery .testemonials-gallery .name span {
+          line-height: 20px; }
+      .imaged .gallery .testemonials-gallery .desc {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        opacity: 0.7;
+        padding-right: 20px; }
+      .imaged .gallery .testemonials-gallery .default-rating .star {
+        background: url(../images/stars-green.png) no-repeat; }
+      .imaged .gallery .testemonials-gallery .default-rating .star-count {
+        color: #ffffff; }
+
+@media all and (min-width: 767px) {
+  .imaged {
+    padding: 75px 0; }
+    .imaged h2 {
+      font-size: 44px;
+      line-height: 50px;
+      margin-bottom: 50px; } }

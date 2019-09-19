@@ -1,0 +1,91 @@
+.imaged {
+  padding: 30px 0;
+  color: #ffffff;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+  .gallery {
+    text-align: left;
+    .nbs-flexisel-inner {
+      max-height: none;
+      text-align: center;
+      .nbs-flexisel-nav-left,
+      .nbs-flexisel-nav-right {
+        top: 0 !important;
+        position: relative;
+        left: auto !important;
+        right: auto !important;
+        display: inline-block;
+        margin: 45px 5px 0 5px;
+      }
+    }
+
+    .testemonials-gallery {
+      text-align: left;
+      .name {
+        position: relative;
+        padding-left: 55px;
+        margin-bottom: 20px;
+        line-height: 40px;
+        font-size: 20px;
+        img {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        span {
+          line-height: 20px;
+        }
+      }
+      .desc {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        opacity: 0.7;
+        padding-right: 20px;
+      }
+      .default-rating {
+        .star {
+          background: url(../images/stars-green.png) no-repeat;
+        }
+        .star-count {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 767px) {
+  .imaged {
+    padding: 75px 0;
+    h2 {
+      font-size: 44px;
+      line-height: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}

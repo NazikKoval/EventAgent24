@@ -1,0 +1,72 @@
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+
+.arrow-white {
+  padding-left: 20px;
+  background: url("../images/css-images/arrow_white.png") no-repeat 0 center;
+}
+
+
+.heading {
+  position: relative;
+  text-align: center;
+  color: $color-white;
+  padding-bottom: $heading-after-line-height+15px;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 28px;
+    margin: 0 0 15px;
+    font-weight: 500;
+  }
+  &::after {
+    position: absolute;
+    bottom: -$heading-after-line-height;
+    left: 50%;
+    margin-left: -$heading-after-line-width/2;
+    content: "";
+    display: block;
+    height: $heading-after-line-height;
+    width: $heading-after-line-width;
+    background-color: $color-white;
+  }
+
+  & + h5 {
+    font-weight: 500;
+  }
+}
+
+.table{
+  tr{
+    td{
+      &:first-child{
+        font-weight: 600;
+    }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
+  .heading {
+    padding-bottom: 5px;
+
+    h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+  }
+}

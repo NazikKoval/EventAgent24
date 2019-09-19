@@ -1,0 +1,50 @@
+@import "variables";
+.small-categories {
+  .category {
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    background: #f5f6f7;
+    transition: all 0.3s;
+    color: #000000;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    h3 {
+      font-weight: 800;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+
+    &:hover,
+    &:active {
+      background: $theme_color;
+      color: #fff;
+    }
+  }
+}
+@media all and (min-width: 767px) {
+  .small-categories {
+    .category {
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+@media all and (min-width: 767px) and (max-width: 992px) {
+  .small-categories {
+    .category {
+      h3 {
+        display: block;
+      }
+    }
+  }
+}

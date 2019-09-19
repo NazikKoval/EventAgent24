@@ -1,0 +1,284 @@
+@import "partials/fonts";
+/*
+Light 300  
+Light 300 Italic  
+Normal 400  
+Normal 400 Italic  
+Semi-Bold 600  
+Semi-Bold 600 Italic  
+Bold 700  
+Bold 700 Italic  
+Extra-Bold 800  
+Extra-Bold 800 Italic
+*/
+
+@import "partials/variables";
+@import "partials/bootstrap";
+
+/* Links, paragraphs etc. css include */
+@import "partials/typography";
+@import "partials/elements";
+@import "partials/modal";
+@import "partials/bootstrap_select";
+@import "partials/time_picker";
+
+/* Header css include */
+@import "partials/header";
+@import "../font-awesome/font-awesome";
+
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body {
+  position: relative;
+  font: 12px 'Open Sans';
+  font-weight: 400;
+  color: $color;
+  background-color: $block-bg-warm-color;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.iradio input[type=radio],
+.icheckbox input[type=checkbox] {
+  //display: none;
+}
+
+*:first-child {
+  margin-top: 0;
+}
+.pointer {
+  cursor: pointer;
+}
+.no-padding {
+  padding: 0px !important;
+}
+div.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+a {
+  cursor: pointer;
+  &, &:hover, &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  &.link{
+    color: #1d1d1b;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &.dropdown-toggle {
+    margin-bottom: 0 !important;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+
+  &.title {
+    margin-bottom: 15px;
+  }
+}
+h1 {
+  font-size: 36px;
+  line-height: 50px;
+  margin-top: 10px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h5 {
+  font-weight: 600;
+  margin-top: 30px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+ul{
+  &.large-view{
+    margin: 20px 0 0;
+    padding: 0 0 0 20px;
+    & > li{
+      margin-bottom: 20px;
+      padding-left: 5px;
+    }
+  }
+}
+p{
+  &.topic{
+    font-size: 16px;
+  }
+}
+input {
+  &[type=time] {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+  }
+}
+.input-group {
+  .form-control, .input-group-addon, .input-group-btn {
+    vertical-align: top;
+  }
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: both;
+  border: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccccc;
+  &.black{
+    border-top-color: #000;
+  }
+  &.light{
+    border-top-color: #e5e5e5;
+  }
+  &.white{
+    border-top-color: $color-white;
+  }
+  &.bold{
+    border-top-width: 3px;
+  }
+  &.max-width{
+    width: 124px;
+  }
+}
+
+.padding15_0 {
+  padding: 15px 0;
+}
+.padding_0_15 {
+  padding: 0 15px;
+}
+.padding_10_15 {
+  padding: 10px 15px;
+}
+.padding_20_0 {
+  padding:20px 0;
+}
+.padding_30_0 {
+  padding:30px 0;
+}
+.padding_30 {
+  padding:30px;
+}
+
+/* Footer css include */
+@import "partials/footer";
+
+@media (min-width: 767px) {
+  .right_alignment {
+    text-align: right;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px){
+  h3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
+  h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.event-preview {
+  .description {
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .table.custom {
+    & > .row {
+      & > div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.tooltip {
+  z-index: 1000;
+}
+.packages-gallery {
+  li {
+    list-style-type: none;
+  }
+}
+
+.cropper_widget {
+  img {
+    max-width: 100%;
+  }
+}
+.cropper_buttons {
+  margin-top: 25px;
+}
+
+.no-map {
+  z-index: 3;
+  background: rgba(0,0,0,0.2);
+  border: 2px solid #f4f3f1;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 15px;
+  p {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.bootstrap-timepicker {
+  input {
+    pointer-events: none;
+  }
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+
+@media all and (max-width: 767px) {
+  .quote-info {
+    text-align: center;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+
+
+
+@import "partials/themed";
+
+//additional styles for site performance 
+@import "partials/performance";

@@ -1,0 +1,201 @@
+body {
+    background-color: white;
+}
+
+.colored,
+.block.colored {
+    background: url(../../image/wedindlan.jpg);
+    background-size: cover;
+}
+
+.colored {
+    height: 446px;
+}
+
+.headline > h1 {
+    font-size: 50px;
+    margin-top: 102px;
+    margin-left: -260px;
+    margin-bottom: -1px
+}
+
+.hint {
+    margin-left: -264px;
+    margin-top: -101px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800
+}
+
+.guitar {
+    text-align: center;
+    height: 500px;
+    background-image: url(../../image/guitar.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.guitar > h1 {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    top: 95px;
+    border-bottom: 0;
+}
+
+.arrows {
+    position: relative;
+    top: 92px;
+    left: 64px;
+}
+
+.arrows > div {
+    display: inline-block;
+    margin-left: -120px;
+}
+
+.arrows > div > p {
+    position: absolute;
+    color: aliceblue;
+    width: 200px;
+    margin-left: 130px;
+    margin-top: -150px;
+    color: #c1c2b6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.num {
+    font-size: 207px;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    opacity: 0.2;
+    margin-left: -223px;
+    margin-top: -29px;
+}
+
+.num.one {
+    color: black;
+}
+
+.arrows > div:first-child > p {
+    margin-left: 40px;
+}
+
+.block {
+    background-color: white;
+}
+
+.whowe {
+    background-color: white;
+    text-align: center;
+    margin-top: -47px;
+}
+
+.whowe > h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #424240;
+    margin-top: 14px;
+}
+
+.whowe > .firstt {
+    width: 45%;
+    margin-top: 75px;
+    font-size: 16px;
+    color: #555554;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.whowe > .seccond {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.whowe > h3::after {
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -62px;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 114px;
+    background-color: #00b892!important;
+}
+
+.imaged {
+    margin-top: 120px;
+}
+
+@media (max-width: 1100px) {
+    .guitar {
+        height: 1400px
+    }
+    .arrows > div {
+        display: block;
+    }
+    .arrows > div > img {
+        transform: rotate(90deg);
+    }
+    .arrows > div {
+        margin-top: 67px;
+    }
+    .arrows > div:nth-child(2) {
+        margin-top: 23px;
+    }
+    .arrows > div:nth-child(4) {
+        margin-top: 52px;
+    }
+    .num {
+        margin-left: -265px;
+        margin-top: 2px;
+    }
+    .num.one {
+        margin-left: -230px;
+    }
+    .arrows > div > p {
+        margin-left: auto;
+        margin-right: auto;
+        left: -112px;
+        right: 0;
+    }
+    .arrows > div:first-child > p {
+        margin-left: auto;
+        margin-right: auto;
+        left: -112px;
+        right: 0;
+    }
+}
+
+@media (max-width: 996px) {
+    .headline > h1 {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 0px;
+        line-height: 40px;
+    }
+    .hint {
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .guitar {
+        height: 1500px;
+    }
+    .whowe > .firstt {
+        width: 80%;
+    }
+}
+
+@media (max-width: 730px) {
+    .guitar {
+        margin-top: -20px;
+    }
+    .guitar > h1 {
+        margin: 20px;
+    }
+}

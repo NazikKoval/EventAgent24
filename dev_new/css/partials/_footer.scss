@@ -1,0 +1,157 @@
+.container_top {
+  .cont_footer_support {
+    p {
+      font-size: 30px;
+      margin: 0;
+      a {
+        color: #ffffff;
+      }
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.footer {
+  color: $footer_color;
+  background: $footer_bg_color;
+  padding: 40px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+
+  .social-icons {
+    text-align: center;
+    margin-bottom: 15px;
+
+    a {
+      display: inline-block;
+      vertical-align: top;
+      color: #8e8e8e;
+      font-size: 36px;
+      line-height: 32px;
+      margin: 0 5px;
+
+      &:hover,
+      &:active {
+        .fa-facebook-square {
+          color: #3a5795;
+        }
+        .fa-twitter-square {
+          color: #1da1f2;
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    display: block;
+    float: none;
+    margin: 0 0 15px -15px;
+    li {
+      margin-left: 15px;
+      margin-bottom: 15px;
+      a {
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 0;
+        padding: 6px 12px;
+        line-height: 20px;
+        &:hover,
+        &.active,
+        &:focus {
+          border-radius: 5px;
+          color: $footer_bg_color;
+          background-color: $footer_menu_hover_bg_color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  a {
+    display: block;
+    color: $footer_links_color;
+    margin-bottom: 15px;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  h3 {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  .bordered {
+    & > * {
+      position: relative;
+      &::before {
+        display: none;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $footer-content-border-color;
+      }
+
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 1200px) {
+  .footer {
+    .social-icons {
+      text-align: left;
+    }
+    .navbar-nav {
+      margin-bottom: 35px;
+      li {
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    .bordered {
+      & > * {
+        &::before {
+          display: block;
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          left: -15px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container_top {
+    .cont_footer_support {
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .container_top {
+    .cont_footer_support {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

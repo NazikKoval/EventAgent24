@@ -1,0 +1,115 @@
+
+.title-text{
+    padding: 20px;
+}
+.verification:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width:317px;
+    height: 139px;
+    background: url(/images/gepr.png);
+}
+.verification li{
+    padding: 7px 45px;
+    margin-bottom: 15px;
+}
+.verification li i {
+    font-size: 35px;
+    color: #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.verification li i.fa-times,
+.verification li i.fa-check{
+    position: relative;
+    margin-top: -9px;
+    color: #33c283;
+}
+.verification li i.fa-times{
+    color: #e64158;
+}
+.verification h4{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.verification .lable{
+    padding: 5px 10px;
+    background: #3cc6d1;
+    color: #fff;
+}
+.collapse-link{
+    position: relative;
+        padding: 4px 35px;;
+    color: #000;
+}
+.icon_switcher_collapse{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    background: url(/images/arrow-view-authbl.png);
+    width: 25px;
+    height: 25px;
+    background-size: 29px;
+    background-position: -2px -24px;
+}
+.collapsed .icon_switcher_collapse {
+    background-position: -2px 0;
+}
+.operator img{
+    float: left;
+    width: 65px;
+    margin-right: 25px;
+}
+.grey-box{
+    background: #ccc;
+    padding: 15px;
+    margin-left: 90px;
+}
+.grey-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+.grey-box p{
+    margin-bottom: 0;
+}
+@media screen and (max-width: 767px),
+screen and (orientation: landscape) and (max-width: 767px),
+screen and (orientation: portrait) and (max-width: 767px) {
+  .verification{
+      margin-left: 0;
+      padding: 0;
+  }
+    .verification:after{
+        display: none;
+    }
+    .verification li {
+        padding: 1px 0 1px 30px;
+        margin-bottom: 15px;
+    }
+    .verification li i{
+        font-size: 23px;
+    }
+    .verification h4{
+        margin-bottom: 5px;
+    }
+    .verification .lable{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .operator img{
+        float: none;
+        margin: 0 auto 10px;
+    }
+    .grey-box{
+        margin-left: 0;
+    }
+}
+.titleBlock{
+    font-size: 22px;
+    font-weight: 500;
+}

@@ -1,0 +1,13 @@
+@import "variables";
+@import "_mixins/font-face";
+
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansLight/OpenSansLight", $weight-light);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansLightItalic/OpenSansLightItalic", $weight-light, $style-italic);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansRegular/OpenSansRegular", $weight-regular);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansRegularItalic/OpenSansRegularItalic", $weight-regular, $style-italic);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansSemiBold/OpenSansSemiBold", $weight-semibold);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic", $weight-semibold, $style-italic);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansBold/OpenSansBold", $weight-bold);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansBoldItalic/OpenSansBoldItalic", $weight-bold, $style-italic);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansExtraBold/OpenSansExtraBold", $weight-extrabold);
+@include font-face("Open Sans", "../fonts/OpenSans/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic", $weight-extrabold, $style-italic);

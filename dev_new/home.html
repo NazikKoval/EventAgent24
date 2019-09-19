@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Agent 24</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" type="text/css" />
+    <link rel="stylesheet" href="css/audioplayer.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="lightbox/ekko-lightbox.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/fileinput.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/style01.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
+    <link rel="stylesheet" href="css/info-styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/dev_style.css" type="text/css" />
+    <link rel="stylesheet" href="css/redesign.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer-block.css" type="text/css" />
+    <link rel="stylesheet" href="css/last-css/custom.css" type="text/css" /> </head>
+
+<body>
+    <div id="language-bar" class="collapse">
+        <div class="container">
+            <ul class="nav nav-pills pull-right">
+                <li>
+                    <a href="http://eventagent24.com/lang_de" class="btn btn-lang en pull"></a>
+                </li>
+                <li><a role="button" data-toggle="collapse" href="#language-bar" aria-expanded="true" aria-controls="language-bar"><i class="fa fa-chevron-up"></i><div class="flag"></div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <ul class="nav nav-pills pull-right hidden-xs  cab-nav">
+                <li><a href="login">LOGIN</a></li>
+                <li class="dropdown dr-btn"> <a href="/dev/" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REGISTER <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="anmeldung-veranstalter">Veranstalter</a></li>
+                        <li><a href="anmeldung-kuenstler-mitglieder">Künstler / Dienstleister</a></li>
+                        <li><a href="dashboard">Artist page</a></li>
+                        <li><a href="meine-veranstaltungen">User page</a></li>
+                    </ul>
+                </li>
+                <li><a role="button" data-toggle="collapse" class="btn btn-primary  btn-lang de" href="#language-bar" aria-expanded="false" aria-controls="language-bar"><i class="fa fa-chevron-up fa-fw"></i><div class="flag"></div></a></li>
+            </ul>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topmenu" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="/dev/"> <img src="images/content-images/logo/logo_24.png" alt="Event Agent 24" class="hidden-xs"> <img src="images/content-images/logo/logo_24_sm.png" alt="Event Agent 24" class="visible-xs"> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="topmenu">
+                <ul class="nav nav-pills visible-xs-inline-block">
+                    <li class="log"><a href="login">Login</a></li>
+                    <li class="dropdown"> <a href="/dev/" class="dropdown-toggle register-hide  " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">REGISTER <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="anmeldung-veranstalter">Veranstalter</a></li>
+                            <li><a href="anmeldung-kuenstler-mitglieder">Künstler / Dienstleister</a></li>
+                            <li><a href="dashboard">Artist page</a></li>
+                            <li><a href="meine-veranstaltungen">User page</a></li>
+                        </ul>
+                    </li>
+                    <li><a role="button" data-toggle="collapse" class="btn btn-primary  btn-lang de" href="#language-bar" aria-expanded="false" aria-controls="language-bar"><i class="fa fa-chevron-up fa-fw"></i><div class="flag"></div></a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="home">ABOUT US</a></li>
+                    <li><a href="ueber-uns">MY BENEFITS</a></li>
+                    <li><a href="meine-vorteile">HOW IT WORKS</a></li>
+                    <li><a href="funktionsweise">BLOG</a></li>
+                    <li><a href="faq">FAQ</a></li>
+                    <li><a href="contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-and-search">
+        <div class="text">
+            <h1>KOSTENLOS und UNVERBINDLICH</h1>
+            <p>So wird die Planung Ihrer Vera lorem nstaltung zum Kinderspiel Treten Sie in Kontakt mit Livebands, Künstlern und Artisten Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <section id="slider" class="carousel slide" data-ride="carousel" data-interval="7000">
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="3"></li>
+                <li data-target="#slider" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active"> <img src="images/content-images/slides/slide1.jpg" alt="KOSTENLOS und UNVERBINDLICH">
+                    <div class="container">
+                        <div class="carousel-caption"> </div>
+                    </div>
+                </div>
+                <div class="item"> <img src="images/content-images/slides/slide2.jpg" alt="Planen Sie Ihre Hochzeit in wenigen Minuten!">
+                    <div class="container"> </div>
+                </div>
+                <div class="item"> <img src="images/content-images/slides/slide3.jpg" alt="Finden Sie die besten Künstler im Nu!">
+                    <div class="container"> </div>
+                </div>
+                <div class="item"> <img src="images/content-images/slides/slide4.jpg" alt="Professionelle Planung verschiedenster Veranstaltungen ">
+                    <div class="container"> </div>
+                </div>
+                <div class="item"> <img src="images/content-images/slides/slide5.jpg" alt="Familienfeiern oder Parties mit Freunden im Handumdrehen organisiert">
+                    <div class="container"> </div>
+                </div>
+            </div>
+            <div id="search_list" style="left: -1000px;">
+                <div class="categories_wrapper">
+                    <div class="close-row">
+                        <button type="button" class="close" aria-hidden="true">×</button>
+                    </div>
+                    <div class="categories-cont">
+                        <ul class="category-list" data-choosen_ids="5,6">
+                            <li data-category-id="6"> <a href="#">Printed materials - posters - banners</a> </li>
+                            <li data-category-id="7"> <a href="#">Event Planner - Wedding Planner</a> </li>
+                            <li data-category-id="8"> <a href="#">Light &amp; Sound / Stage Technic</a> </li>
+                            <li data-category-id="9"> <a href="#">Fireworks</a> </li>
+                            <li data-category-id="10"> <a href="#">Photographer - Video - Film</a> </li>
+                            <li data-category-id="11"> <a href="#">Confectionery - Cakes - Sweets</a> </li>
+                            <li data-category-id="12"> <a href="#">Locations - Rooms for Events</a> </li>
+                            <li data-category-id="13"> <a href="#">Moderators - Speakers - Speaker</a> </li>
+                            <li data-category-id="14"> <a href="#">Playground Equipment</a> </li>
+                            <li data-category-id="15"> <a href="#">Tent Rentals - Party Tents - Stages</a> </li>
+                            <li data-category-id="16"> <a href="#"> Street performer</a> </li>
+                            <li data-category-id="17"> <a href="#">Party supplies</a> </li>
+                            <li data-category-id="18"> <a href="#">Printed materials - posters - banners</a> </li>
+                            <li data-category-id="19"> <a href="#">Event Planner - Wedding Planner</a> </li>
+                            <li data-category-id="20"> <a href="#">Event Logistics - Transport</a> </li>
+                            <li data-category-id="21"> <a href="#">Light & Sound / Stage Technic</a> </li>
+                            <li data-category-id="22"> <a href="#">Event Accessories</a> </li>
+                            <li data-category-id="23"> <a href="#">Fireworks</a> </li>
+                            <li data-category-id="24"> <a href="#">Hairdresser - Beauty - Styling</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-search">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-xs-3 text-right btn_az_container"> </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <form action="events.html" autocomplete="off" id="form_srch" method="post" name="form_srch" role="form" novalidate="novalidate">
+                            <input id="search_ids" name="search_ids" type="hidden" value="">
+                            <input id="lid" name="lid" type="hidden" value="2">
+                            <input class="form-control search home-search" autocomplete="off" data-provide="typeahead" data-ajax-for-complete="ajax-autocomplete.json" data-ajax-for-hint="ajax-popover.json" data-content="" data-title="Wie suche ich?" id="search" name="search" rel="popover" type="text" data-original-title="" title="">
+                            <div class="hidden" id="search_suggestion" data-ajax-url="ajax-filter.html"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div>
+        <div class="container warmi">
+            <div class="row">
+                <div class="col-md-6"><img src="image/weddingNew.png" alt="" class="double"></div>
+                <div class="col-md-6">
+                    <h2 class="hWarmi"> About Service eventagent24.com </h2><img src="image/line.jpg" alt="" class="line">
+                    <p class="pWarmi">Finding the right music band for your wedding, a clown for the kids’ birthday party or trying to organize a business event, can often be a nightmare. Spending endless hours searching the internet, studying hundreds of websites, writing e-mails, making phone calls and waiting for the right people to reply can be frustrating and expensive for your company, if your assistant has to do such time consuming work. </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="servi-div1">
+                                <p class="servi-head one">2475</p>
+                                <p class="servi-down one">Service Providers</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="servi-div2">
+                                <p class="servi-down two">Success Events</p>
+                                <p class="servi-head two">6754</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="servi-div3">
+                                <p class="servi-head three">5849</p>
+                                <p class="servi-down three">Events organizers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="celebrate">
+            <h2>What do you celebrate?</h2>
+            <p>Find out more about our event packages for your celebration!</p>
+            <div class="flex-container ">
+                <div class="flex-item flex-item-1"><img src="image/ves.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>WEDDING WEDDING WEDDING</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div><a href="#" class="button" role="button">PLAN THE WEDDING</a> </div>
+                <div class="flex-item flex-item-2"><img src="image/wed2.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>KIDS PARTY</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div><a href="#" class="button" role="button">PLAN THE KIDS PARTY</a> </div>
+                <div class="flex-item flex-item-3"><img src="image/wed3.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>BIRTHDAY PARTY</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div><a href="#" class="button" role="button">PLAN THE BIRTHDAY</a> </div>
+                <div class="flex-item flex-item-4"><img src="image/wed4.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>WEDDING CEREMONY</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div>
+                    <button class="button">PLAN THE WEDDING</button>
+                </div>
+                <div class="flex-item flex-item-1"><img src="image/ves.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>WEDDING</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div><a href="#" class="button" role="button">PLAN THE WEDDING</a> </div>
+                <div class="flex-item flex-item-2"><img src="image/test.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>KIDS PARTY</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div><a href="#" class="button" role="button">PLAN THE KIDS PARTY</a> </div>
+                <div class="flex-item flex-item-3"><img src="image/wed3.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>BIRTHDAY PARTY</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div><a href="#" class="button" role="button">PLAN THE BIRTHDAY</a> </div>
+                <div class="flex-item flex-item-4"><img src="image/wed4.jpg" alt="">
+                    <div class="celebrate-h">
+                        <h3>WEDDING CEREMONY</h3> </div>
+                    <div> <span><a href="">Music bands  </a> </span><span><a href=""> DJs</a> </span> <span> <a href="">Showact</a> </span></div>
+                    <div><span> <a href="">Decoration</a> </span> <span> <a href="">Event Planners</a> </span> </div>
+                    </span> <a href="#" class="button" role="button">PLAN THE WEDDING</a> </div>
+            </div> <a href="#" class="button btn-view" role="button">VIEW ALL EVENTS</a> </div>
+        <div id="comments-block" class="block warm quoted">
+            <div class="container">
+                <h2>Customer testimonials</h2> <img src="image/line.jpg" alt="" class="customer-line">
+                <div id="comments-gallery1" class="carousel slide quotes-gallery">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Einwandfrei</h3>
+                                <p>Toller Service um Hochzeitsdiebstleister zu finden. Man wird direkt von den Künstlern kontaktiert und bekommt ein unverbindliches Angebot. Sehr hilfreich.</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Anja Pirker 2019-08-15 16:22:10</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Super zufrieden</h3>
+                                <p>War sehr zufrieden macht weiter so </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Ulrike sundl 2019-08-10 14:46:15</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Super Sache </h3>
+                                <p>Ich bin hier zwar nicht fündig geworden. Aber ich habe super Angebote erhalten, und man muss ehrlich sagen für eine Kostenlose Plattform. Ist alles top organisiert. Bitte macht so weiter und Ihr werdet sicher vielen Leuten helfen. Danke nochmal!!! </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Michael 2019-08-07 10:31:21</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Hochzeitsmisik</h3>
+                                <p>super tolle seite habe meine musik für die hochzeit innerhalb kurzer zeit gefunden </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Silvia 2019-08-06 12:16:57</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Band für unsere Hochzeitsfeier</h3>
+                                <p>Wir haben noch innerhalb eines Tages annähernd 10 Bands empfohlen bekommen und sind direkt fündig geworden. Mit der ausgewählten Band haben wir direkt einen Engagementvertrag abgeschlossen und ich bin sehr beruhigt, diesen wichtigen Vorbereitungsteil abgeschlossen zu haben.</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Ulrike Rust 2019-07-29 10:54:17</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>4.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  star_none fa-space" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Hochzeitstafel</h3>
+                                <p>wir haben über dieses Portal aus einigen Angeboten, den passenden Musiker für unsere Hochzeitstafel gefunden, Danke </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Walter FARKAS 2019-07-25 13:30:46</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Einfache Eingabe-super Ergebnis</h3>
+                                <p>Habe aus Verzweiflung, eine passende Band für unsere Hochzeit zu finden, hier dafür ein Event und Bandsuche erstellt und 6 Rückmeldungen von Bands bekommen. Eine davon war dann auch die Band für die wir uns entschieden haben :-)</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Sabrina Rothermel 2019-07-24 13:15:04</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Sehr gut</h3>
+                                <p>Wenn man eine gute Musik für eine Veranstaltung sucht ist man hier genau richtig. </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Heidi Tost 2019-07-07 15:32:19</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">große Erleichterung</h3>
+                                <p>Vielen Dank! Durch dieses Service haben wir sehr schnell die geeignete Musik für unsere Veranstaltung gefunden!</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Katharina Ettl 2019-05-27 12:03:38</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Positiv Überrascht!</h3>
+                                <p>Super Plattform! Sehr hilfsbereit, schnelle Angebote und sehr gute kriterien Auswahl! Immer wieder gerne!</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Melanie 2019-06-14 12:21:41</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Einfach und unkompliziert </h3>
+                                <p>Meine Suche nach einer Hochzeitssänger/in der/die auch auf meiner Feier danach auch als DJ auflegt war einfach und unkompliziert. Schnelle Angebote und sehr einfach zu finden. Für jeden was dabei. Zum Weiterempfehlen!</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Marion Eisenmann 2019-06-05 15:28:05</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Super</h3>
+                                <p>Hat super funktioniert.Danke!</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Ingrid Stöllinger 2019-07-08 17:40:22</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Hochzeit</h3>
+                                <p>Gesucht war eine Band und mit Eventagent24 auch schnell gefunden. </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Patrick Sallaberger 2019-07-11 11:48:09</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>4.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  star_none fa-space" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Sehr gutes Service</h3>
+                                <p>Hier gibt es für jede Veranstaltung die richtige Musik </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Nestl Manfred 2019-05-26 16:33:56</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Hochzeit </h3>
+                                <p>Super hat nach zwei Stunden funktioniert Dankeschön </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Wimmler Johann 2019-07-09 04:45:57</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>3.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  star_none fa-space" data-value="4"></span> <span class="star  star_none fa-space" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">War überrascht...</h3>
+                                <p>... wie super einfach die Anmeldung war und über die vielen Rückmeldungen von Bands ich bekommen habe. Echt super Seite! </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Ingrid Fink-Wolfram 2019-06-10 14:14:56</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Super!!!</h3>
+                                <p>Ist einfach super... Soviele haben sich gemeldet und für jede Musik Richtung was dabei... Jeder Zeit wieder </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Anja Wagner 2019-05-23 13:19:33</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Alles bestens gerne wieder</h3>
+                                <p>Einfache Handhabung, haben sehr viele Angebote bekommen. Ist auf jeden Fall empfehlenswert </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Mario Groschner 2019-05-23 15:40:18</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">last minute Hilfe</h3>
+                                <p>Hat uns noch sehr kurzfristig eine Möglichkeit geboten</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Cornelia 2019-07-11 04:33:10</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Hochzeit</h3>
+                                <p>Sehr guter Service.</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Rosmarie Schedel 2019-07-19 04:18:27</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>4.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  star_none fa-space" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Super, einfach &amp; schnell</h3>
+                                <p>Wir haben für unsere Hochzeit eine passende Band gesucht und waren schon der Meinung, da wir sehr kurzfristig dran waren, wir finden schwer eine. Dann sind wir auf diese Seite gestoßen, haben unsere Wünsche eingegeben und haben binnen weniger Stunden bereits passende Angebote für unseren Termin erhalten, super!</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Andrea &amp; Martin Vogt 2019-07-05 11:59:49</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Excellent </h3>
+                                <p>Sehr seriös und extrem gut und einfach aufgebaut und man hat sofort die Möglichkeit Musiker zu finden schnell und einfach </p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Peter Felsberger 2019-06-03 23:00:47</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">wenig Angebot - tolle Qualität</h3>
+                                <p>es kam über diese Plattform zwar nur ein einziges Angebot, dieses haben wir angenommen und es war Großartig :-)</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Barbara Z. 2017-06-02 19:31:13</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Effizientes Portal</h3>
+                                <p>Sehr effizientes Portal. Gute Rückmeldungen und schlussendlich eine erfolgreiche Suche. Herzlichen Dank.</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Josef Ehrenhöfer 2017-05-08 16:11:11</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="quote">
+                                <h3 style="margin-bottom:10px;">Herrlich</h3>
+                                <p>hat alles super geklappt</p>
+                            </div>
+                            <div class="row quote-info">
+                                <div class="col-sm-6">
+                                    <div class="quote-author">Weinig Tanja 2016-10-22 01:28:04</div>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="default-rating"> <span class="star-count"><span>5.0</span> / 5.0</span> <span class="star  fa-space star_full" data-value="1"></span> <span class="star  fa-space star_full" data-value="2"></span> <span class="star  fa-space star_full" data-value="3"></span> <span class="star  fa-space star_full" data-value="4"></span> <span class="star  fa-space star_full" data-value="5"></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#comments-gallery1" role="button" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#comments-gallery1" role="button" data-slide="next"></a>
+                </div>
+                <div class="text-center"> <a data-toggle="1" class="btn btn-green comment-form-link" onclick="return $.fn.feedbackHomeFunc()" href="/en/other-ax/feedback-home">You can rate our service here <i class="fa fa-angle-right btn-sign"></i></a> </div>
+                <div id="comment-form-cont" class="collapse">
+                    <div id="comment_form" data-pjax-container=""> </div>
+                </div>
+                <div class="text-center"> <img src="images/feedback.png" width="417" height="156" alt=""> </div>
+            </div>
+        </div>
+        <div class="block cold">
+            <div class="container">
+                <div class="heading">
+                    <h3>Find musicians, artists and other service providers</h3>
+                    <h3> for your events in one place!</h3> </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="checked">
+                            <h3>Free registration</h3>
+                            <p>Create your profile to present your services and become a part of our platform.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="checked">
+                            <h3>Receive event offers</h3>
+                            <p>We will let you know as soon as matching to your profile request reaches us</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="checked">
+                            <h3>Create your offer and place an order</h3>
+                            <p>Purchase the contact details of the event organizer, and make him an attractive offer to get a new job!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg">
+                    <button class="button btn-start">START PLANNING YOUR EVENT</button>
+                    <br>
+                    <br> <a href="">Register as artist/service provider</a>
+                    <br>
+                    <br>
+                    <p>Registration in completely free</p>
+                </div>
+            </div>
+        </div>
+        <a href="/en/site/video" style="display: none" class="video_init"></a>
+        <div id="result_div" data-pjax-container=""> </div>
+        <section class="container_top">
+            <div class="cont_footer_support">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>Sie haben noch Fragen?</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:support@eventagent24.com">support@eventagent24.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <h3>Useful Links:</h3>
+                        <ul class="links">
+                            <li><a target="_blank" href="/en/legal-information?type=lp2">Legal</a></li>
+                            <li><a target="_blank" href="/en/how-it-works">How it works</a></li>
+                            <li><a target="_blank" href="/en/terms?type=lp2">Terms and Conditions</a></li>
+                            <li><a target="_blank" href="/en/contact-us">Contact</a></li>
+                            <li><a target="_blank" href="/en/privacy_policy">Privacy Policy</a></li>
+                            <li><a target="_blank" href="/en/disclaimer">Disclaimer </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <h3>Are You Organizer?</h3>
+                        <p>Sign up for free and plan your events easily!</p> <a class="btn btn-green" href="/en/llpackage/event">Register</a> </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <h3>Are You Artists/ Service Providers?</h3>
+                        <p>Registration is completely free. Find the right event for you and get it started!</p> <a class="btn btn-green" href="/en/sign-up-artist">Register</a> </div>
+                </div>
+                <div class="row top-border">
+                    <div class="col-xs-12 col-sm-6">
+                        <ul class="social">
+                            <li> <a target="_blank" class="lp_hover" href="https://www.facebook.com/eventagent24"><i class="fa fa-facebook " aria-hidden="true"></i></a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="copyright"> Copyright © 2018 EventAgent24.</p>
+                    </div>
+                </div>
+            </div>
+        </div> <a class="btn btn-dark anchor-link anchor-top go-top print_hide" style="display: block; opacity: 1;"><i class="fa fa-chevron-up fa-fw"></i></a>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/old/jquery.flexisel.js"></script>
+        <script type="text/javascript" src="js/wysihtml5-0.4.0.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap-select.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <!--    <script type="text/javascript" src="js/old/jquery.Jcrop.js"></script>-->
+        <script type="text/javascript" src="js/old/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/old/jquery.datatables.js"></script>
+        <script type="text/javascript" src="js/old/jquery.datatables.responsive.js"></script>
+        <script type="text/javascript" src="js/old/additional-methods.js"></script>
+        <script type="text/javascript" src="js/old/jasny-bootstrap.js"></script>
+        <script type="text/javascript" src="js/old/jquery.backstretch.js"></script>
+        <script type="text/javascript" src="js/old/jquery.blockui.js"></script>
+        <script type="text/javascript" src="js/old/jquery.color.js"></script>
+        <script type="text/javascript" src="js/old/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/old/jquery.jplayer.js"></script>
+        <script type="text/javascript" src="js/old/jquery.loadtemplate.js"></script>
+        <script type="text/javascript" src="js/old/moment.js"></script>
+        <script type="text/javascript" src="js/old/respond.js"></script>
+        <script type="text/javascript" src="js/old/jquery.timer.js"></script>
+        <script type="text/javascript" src="js/old/jquery.numeric.js"></script>
+        <script type="text/javascript" src="js/old/bootstrap-datatables.js"></script>
+        <script type="text/javascript" src="js/old/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="js/old/bootstrap-daterangepicker.js"></script>
+        <script type="text/javascript" src="js/old/bootstrap-datetimepicker.js"></script>
+        <script type="text/javascript" src="js/old/bootstrap-maxlength.js"></script>
+        <script type="text/javascript" src="js/old/bootstrap-timepicker.js"></script>
+        <script type="text/javascript" src="js/old/ekko-lightbox.js"></script>
+        <script type="text/javascript" src="js/old/holder.js"></script>
+        <script type="text/javascript" src="js/old/html5shiv.js"></script>
+        <script type="text/javascript" src="js/icheck.min.js"></script>
+        <script type="text/javascript" src="js/locales/lang-de.js"></script>
+        <script type="text/javascript" src="js/bootstrap-typeahead.js"></script>
+        <script type="text/javascript" src="js/jquery.listnav.js"></script>
+        <script type="text/javascript" src="js/audioplayer.js"></script>
+        <script type="text/javascript" src="js/bootstrap-wysihtml5.js"></script>
+        <script type="text/javascript" src="lightbox/ekko-lightbox.min.js"></script>
+        <script type="text/javascript" src="js/fileinput.min.js"></script>
+        <script type="text/javascript" src="js/locales/fileinput_locale_de.js"></script>
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+        <script type="text/javascript" src="js/dev_script.js"></script>
+        <script type="text/javascript" src="js/jquery.icalendar.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
